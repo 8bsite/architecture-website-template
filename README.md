@@ -1,22 +1,18 @@
-# Free HTML architecture website template with GSAP scroll animations — Midblock
+# Free HTML architecture website template with GSAP scroll animations
 
-**Website for an architecture office, with projects, method, team and an enquiry form: a free HTML template in one file, with GSAP scroll animations, no build step, MIT license. Made by [8B](https://8b.com/), the AI website builder.**
+Architecture website template: a one-page HTML site for a small architecture office, with a projects row that walks sideways, a four-step method, a register table, five team portraits and an enquiry form. The look is flat pastel blocks and street photos that start as smeared colour and sharpen as you scroll. The whole site is one HTML file, and AGENTS.md tells an AI coding agent what to edit and what to leave.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE) ![one HTML file: no build](https://img.shields.io/badge/one%20HTML%20file-no%20build-orange) ![GSAP: ScrollTrigger](https://img.shields.io/badge/GSAP-ScrollTrigger-88ce02)
 
 **[Live demo](https://8bsite.github.io/architecture-website-template/)** · **[Use this template](https://github.com/new?template_name=architecture-website-template&template_owner=8bsite)** · **[Download ZIP](https://github.com/8bsite/architecture-website-template/archive/refs/heads/main.zip)** · **[Template page on 8b.com](https://8b.com/templates/midblock/)**
 
-<a href="https://8bsite.github.io/architecture-website-template/"><img src="previews/desktop.png" alt="Midblock, a free HTML template: first screen on a desktop" width="76.1%"></a> <a href="https://8bsite.github.io/architecture-website-template/"><img src="previews/phone.png" alt="Midblock, a free HTML template: first screen on a phone" width="21.9%"></a>
+<a href="https://8bsite.github.io/architecture-website-template/"><img src="previews/desktop.png" alt="Architecture website template: first screen on a desktop" width="76.1%"></a> <a href="https://8bsite.github.io/architecture-website-template/"><img src="previews/phone.png" alt="Architecture website template: first screen on a phone" width="21.9%"></a>
 
-<p align="center"><a href="https://8bsite.github.io/architecture-website-template/"><img src="previews/scroll.gif" alt="Midblock, a free HTML template: scrolling through the first sections on a desktop" width="40%"></a><br><sub>Scroll animation</sub></p>
+<p align="center"><a href="https://8bsite.github.io/architecture-website-template/"><img src="previews/scroll.gif" alt="Architecture website template: scrolling through the first sections" width="40%"></a><br><sub>Scroll animation</sub></p>
 
-A one-page site for a small architecture office that builds on narrow city plots, with its buildings, method, a register of plots, team and an enquiry form. Flat pastel blocks and street photos that start as streaks of smeared colour and come into focus as you scroll; the projects pass sideways like a walk along a street.
+## Use it with Claude Code, Cursor or Codex
 
-Good for: architecture or design office; architect's portfolio; urban planning or housing studio; construction or development company; any studio showing projects one by one plus a team.
-
-## Use it with an AI coding agent
-
-Download the files into your project (in Windows PowerShell type `curl.exe`):
+Download the four files into your project folder (`curl.exe` in Windows PowerShell):
 
 ```bash
 curl -LO https://raw.githubusercontent.com/8bsite/architecture-website-template/main/index.html
@@ -25,40 +21,66 @@ curl -LO https://raw.githubusercontent.com/8bsite/architecture-website-template/
 curl -LO https://raw.githubusercontent.com/8bsite/architecture-website-template/main/CREDITS.md
 ```
 
-Then give your agent this prompt:
+Then fill in the angle brackets and give your agent this prompt:
 
 ```text
-Read AGENTS.md, then edit index.html. Use this template as the base for a site for <your architecture office or studio: what you design, where, your projects with photos, your team, how to get in touch>. Keep the layout, the motion and the single-file format; replace the brand name, copy, photos, project data, the register table, team, address, links and contacts, and recolour it through the CSS variables if needed.
+Read AGENTS.md, then edit index.html. Turn this template into the site for <my architecture office: name, city and studio address, what we design, projects with plot width, floors, year and photos, our working steps, the team with roles, opening hours, how a client sends an enquiry>. Replace first the office name, the city, the five project cards, the register table and the team, and set the footer wordmark's length number to the new name's character count. Keep the section ids, the classes AGENTS.md lists and the form fields named name, email and plot. Ask me for any missing fact and never invent prices, hours, addresses, licences, reviews or contacts.
 ```
 
-Give the agent the downloaded file, not a link: from a link it would rebuild a different page. No agent? Click **[Use this template](https://github.com/new?template_name=architecture-website-template&template_owner=8bsite)**, edit `index.html` and turn on **Settings → Pages**.
+On an architectural website template, collect the facts only the office can give before touching the design: name, city, address, phone, email, hours, each real project with its plot width, floors and year, and the people with their roles. An agent left alone may fill gaps with plausible inventions, so when you vibe code this page with Claude Code, Cursor or Codex, tell it to stop and ask. Each project card takes its width from the inline --plot value, the plot width in metres. Keep the section ids, the classes AGENTS.md lists and the form fields named name, email and plot, which the contact script reads.
 
-## What's on the page
+No agent? Click **[Use this template](https://github.com/new?template_name=architecture-website-template&template_owner=8bsite)**, edit `index.html` on GitHub and turn on **Settings > Pages**.
 
-- **Navigation** — top bar: wordmark, four section links, Bring us a plot button; phone menu overlay
-- **We build in the gaps a city leaves.** — first screen: headline on stepped blocks between slabs of a street photo, then a manifesto and three short facts
-- **Five buildings, none wider than a bus** — projects walked sideways: five buildings at their relative plot widths, each with a plate
-- **We read a street for a whole day** — method in four steps beside a photo crossed by a red scan line
-- **The gap register** — table of entries with status badges (demo: a public list of plots)
-- **Borrowed colours** — six full-width colour bands, each with a name, a sentence and where it is used
-- **What the neighbours said** — three testimonials on blocks at stepped heights, with one photo
-- **9 Ropewalk, floor by floor** — one project floor by floor: a building photo cut into seven slices beside a list of seven levels
-- **Five people, one long table** — team: five portraits at stepped heights with names and roles
-- **Questions we hear on site** — questions and answers (native &lt;details&gt;)
-- **Bring us a plot** — enquiry form between two street-photo slabs, then address, phone, email and hours
-- **Footer** — colour bands, width-filling MIDBLOCK wordmark, links, address, copyright and the Design: 8B credit
+## Sections and motion
+
+- **Navigation**: top bar: wordmark, four section links, Bring us a plot button; phone menu overlay.
+- **We build in the gaps a city leaves.**: first screen: headline on stepped blocks between slabs of a street photo, then a manifesto and three short facts. Smooth scrolling throughout. The first screen holds while street-photo slabs grow and squeeze from streaks of colour into focus, and the headline blocks drift up.
+- **Five buildings, none wider than a bus**: projects walked sideways: five buildings at their relative plot widths, each with a plate. Pinned, the five buildings pass sideways as you scroll; each photo sharpens from a smear and shifts inside its frame.
+- **We read a street for a whole day**: method in four steps beside a photo crossed by a red scan line. Scrolling the four steps sends a red line across the photo, leaving a smeared copy behind and lighting each time label.
+- **The gap register**: table of entries with status badges (demo: a public list of plots). In view, three colour stripes grow from hairlines and the heading, text and button slide in from alternating sides.
+- **Borrowed colours**: six full-width colour bands, each with a name, a sentence and where it is used. Tied to scroll, the six bands unroll downwards one by one, each label wiping in from the left.
+- **What the neighbours said**: three testimonials on blocks at stepped heights, with one photo. In view, the three quotes slide in from alternating sides and the photo squeezes from a streak into focus.
+- **9 Ropewalk, floor by floor**: one project floor by floor: a building photo cut into seven slices beside a list of seven levels. Reading down the seven levels slides the photo's slices left and right, and the slice for the level being read sits nearest to aligned.
+- **Five people, one long table**: team: five portraits at stepped heights with names and roles. Tied to scroll, the five portraits rise or drop into their stepped row, each sharpening from a streak.
+- **Questions we hear on site**: questions and answers (native &lt;details&gt;). The heading and its intro slide in from opposite sides as the section comes into view.
+- **Bring us a plot**: enquiry form between two street-photo slabs, then address, phone, email and hours. Tied to scroll, two street-photo slabs slide in from the edges towards the form and sharpen from streaks.
+- **Footer**: colour bands, width-filling MIDBLOCK wordmark, links, address, copyright and the Design: 8B credit. As the footer comes into view, four colour stripes grow from hairlines above the full-width wordmark.
 
 ## Design
 
-Palette: ![#d9e4f0](https://img.shields.io/badge/-%23d9e4f0-d9e4f0?style=flat-square) ![#1a2430](https://img.shields.io/badge/-%231a2430-1a2430?style=flat-square) ![#f3eeed](https://img.shields.io/badge/-%23f3eeed-f3eeed?style=flat-square) ![#b9471f](https://img.shields.io/badge/-%23b9471f-b9471f?style=flat-square) ![#e7a36a](https://img.shields.io/badge/-%23e7a36a-e7a36a?style=flat-square) ![#3f6964](https://img.shields.io/badge/-%233f6964-3f6964?style=flat-square) ![#26419b](https://img.shields.io/badge/-%2326419b-26419b?style=flat-square) ![#d22630](https://img.shields.io/badge/-%23d22630-d22630?style=flat-square) ![#ffffff](https://img.shields.io/badge/-%23ffffff-ffffff?style=flat-square) ![#475463](https://img.shields.io/badge/-%23475463-475463?style=flat-square) ![#a9c1dd](https://img.shields.io/badge/-%23a9c1dd-a9c1dd?style=flat-square) ![#e6dad8](https://img.shields.io/badge/-%23e6dad8-e6dad8?style=flat-square)  
-Fonts: Mozilla Headline, Mozilla Text (Google Fonts). Change both through the CSS variables in the `:root` block at the top of `<head>`. A big display line with `style="--len:N"` fills its width: set N to its new number of characters.
+![#d9e4f0](https://img.shields.io/badge/-%23d9e4f0-d9e4f0?style=flat-square) page background, pale sky  
+![#1a2430](https://img.shields.io/badge/-%231a2430-1a2430?style=flat-square) text, buttons, dark sections  
+![#f3eeed](https://img.shields.io/badge/-%23f3eeed-f3eeed?style=flat-square) cream blocks: the headline block, two of the three facts, the first quote, the form panel  
+![#b9471f](https://img.shields.io/badge/-%23b9471f-b9471f?style=flat-square) brick red stripes, hovers  
+![#e7a36a](https://img.shields.io/badge/-%23e7a36a-e7a36a?style=flat-square) sand: third block on the first screen, labels on navy, one colour band  
+![#3f6964](https://img.shields.io/badge/-%233f6964-3f6964?style=flat-square) door green: badge markers and one colour band  
+![#26419b](https://img.shields.io/badge/-%2326419b-26419b?style=flat-square) tram blue band  
+![#d22630](https://img.shields.io/badge/-%23d22630-d22630?style=flat-square) red scan line and thin red bands  
+![#ffffff](https://img.shields.io/badge/-%23ffffff-ffffff?style=flat-square) register and team sections, text on navy  
+![#475463](https://img.shields.io/badge/-%23475463-475463?style=flat-square) muted grey-blue for small labels, table headings, notes and rules on navy  
+![#a9c1dd](https://img.shields.io/badge/-%23a9c1dd-a9c1dd?style=flat-square) upper end of the sky gradient behind the first screen  
+![#e6dad8](https://img.shields.io/badge/-%23e6dad8-e6dad8?style=flat-square) plaster pink blocks and one colour band
 
-- The smeared slabs in the opening and contact are one street photo stretched sideways with CSS: to change it, replace the same URL in all eight opening layers and both contact slabs. The floors section uses one photo for all seven slices, the scan section one photo twice.
-- Project card widths and heights come from the inline style="--plot: N; --h: N" on each building: --plot is the plot width in metres, used as a relative width.
+**Mozilla Headline**: section headings and the wordmark: condensed, semi-bold, tight lines. **Mozilla Text**: body text, buttons, form fields and spaced uppercase labels (Google Fonts). Square-cornered blocks of flat colour stand on a pale sky, stepped like facades along a street. Photos are cut into vertical slabs or sized by each plot's relative width above a striped pavement. Colour bands, 2px rules and portraits at stepped heights carry the street idea down the page.
+
+## Questions
+
+**Does the enquiry form send anything?**  
+No. As shipped, the form checks that a name, a valid email and the plot address are present, shows a thank-you line and clears the fields; no request is made anywhere. To receive enquiries, wire it to Formspree or, on Netlify, to Netlify Forms; AGENTS.md gives the code for both. The thank-you text also promises a reply within a week, so change that to your own promise.
+
+**Can the register table list finished projects instead?**  
+Yes. It is a plain HTML table with five columns and a status badge, and no script touches it, so rows can be added, removed or turned into projects, sites or listings. On phones each row folds into a stacked record with labels for width, depth and orientation.
+
+**Are there architecture portfolio website examples I can look at?**  
+The live demo is one. It shows an invented small office with five projects, an eight-row register and a five-person team in a single HTML file. Every name, address and figure in it is made up, so replace them and swap the photos before publishing.
+
+## Is it the right base?
+
+Among website templates for architects, this one suits a practice with about five projects worth showing and a method to explain. A builder who quotes jobs after a site visit is better served by the [contractor](https://8b.com/templates/ashlar/) template, which is built around services, prices and visits. A firm with a long archive of projects needs a site with more than one page. What this layout cannot do as shipped is give each building its own page: the project cards are plain blocks, not links. With motion on, the sideways row also pins the page for a stretch of scrolling before the method section.
 
 ## Before you publish
 
-- Replace everything marked `data-8b-placeholder` (social preview image, favicon, form, phone, email) and the invented demo facts: prices, dates, address. [AGENTS.md](AGENTS.md) lists them.
+- Replace what is marked `data-8b-placeholder` (social preview image, favicon, form, phone, email) and the invented demo facts; [AGENTS.md](AGENTS.md) lists them.
 - The form sends nothing yet: connect it to Formspree or Netlify Forms, or remove it.
 
 ## Tech
